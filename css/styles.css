@@ -236,6 +236,7 @@ body {
   border-radius: 4px;
 }
 .hero-button {
+  cursor: pointer;
   position: absolute;
   display: flex;
   align-items: center;
@@ -254,6 +255,7 @@ body {
   fill: var(--acsent-color);
 }
 .hero-svg {
+  transition: 250ms var(--timing-function);
   width: 18px;
   height: 18px;
 }
@@ -404,26 +406,39 @@ body {
 .modal-item {
   color: var(--acsent-color);
 }
+
 .modal-submit {
+  letter-spacing: 0.06em;
+  font-family: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
   border: 0;
+  cursor: pointer;
 
   background-color: var(--acsent-color);
   color: var(--white-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+.modal-submit:hover,
+.modal-submit:focus {
+  transition: 250ms var(--timing-function);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .modal-svg {
   position: absolute;
-  display: flex;
-  top: 14px;
-  left: 15px;
+  top: 50%;
+  left: 12px;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
 
   width: 18px;
   height: 18px;
@@ -540,7 +555,7 @@ body {
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -865,6 +880,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  cursor: pointer;
 
   color: var(--white-color);
   background-color: var(--acsent-color);
@@ -880,8 +896,8 @@ body {
 }
 .hooter-btn:hover,
 .hooter-btn:focus {
+  transform: 250ms var(--timing-function);
   background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* Portfolio */
 
